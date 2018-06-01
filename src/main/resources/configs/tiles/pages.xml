@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- 登入-流程首頁-->
+	<definition name="gate.login_management" template="/WEB-INF/pages/jsp/function/login_management.jsp"></definition>
+	
+	<!-- 變更密碼 -->
+	<definition name="gate.reset_password" template="/WEB-INF/pages/jsp/function/reset_password.jsp"></definition>
+	
+	<!-- 共用錯誤頁
+	==================================================================================================== -->
+	<definition name="common.error" extends="one.column.theme">
+		<put-attribute name="content" value="/WEB-INF/pages/jsp/layout/material/common_error.jsp" />
+	</definition>
+</tiles-definitions>
